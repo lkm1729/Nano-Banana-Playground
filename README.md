@@ -1,6 +1,7 @@
 # Nano-Banana Playground
 
-一个本地优先的桌面图像生成客户端，支持 Gemini Native 和 OpenAI Compatible 接口，并兼容 A6API 等 OpenAI 风格代理。
+一个本地优先的桌面图像生成客户端，支持 Gemini Native 和 OpenAI Compatible 接口，并兼容 自带API 等 OpenAI 风格代理。
+**声明：此项目由GPT-5.6 Sol支持开发**
 
 ## 功能
 
