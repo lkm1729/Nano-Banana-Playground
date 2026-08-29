@@ -1,7 +1,7 @@
 {
   "name": "nano-banana-playground",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "A local-first Nano-Banana image client",
   "type": "module",
   "main": "electron/main.cjs",
