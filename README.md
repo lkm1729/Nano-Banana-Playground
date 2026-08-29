@@ -104,18 +104,6 @@ npm run test:clipboard
 
 说明：桌面集成测试需要本机 Electron 图形运行环境；如果系统缺少 GPU 运行依赖，可能无法启动测试窗口，但不影响协议测试和源码构建。
 
-## GitHub 发布建议
-
-GitHub 仓库建议上传源码和文档，不要把 `node_modules`、构建缓存或本地用户数据提交进去。
-
-Windows 便携版包含约数百 MB 的 Electron 运行时，建议：
-
-1. 将源码提交到 GitHub 仓库。
-2. 使用 GitHub Releases 发布 Windows 便携版压缩包。
-3. 不要把 API Key、`settings.json`、用户数据目录或个人生成历史提交到仓库。
-
-详细上传步骤见 [`GITHUB_UPLOAD_GUIDE.md`](GITHUB_UPLOAD_GUIDE.md)。
-
 ## 许可证
 
 本项目使用 MIT License，详见 [`LICENSE`](LICENSE)。
