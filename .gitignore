@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+source/dist/
+source/release/
+release-nano-banana-playground/
+
+# Vite / test caches
+.vite/
+**/.vite/
+*.log
+.desktop-test-user-data/
+source/.desktop-test-user-data/
+
+# Local app data and secrets
+UserData/
+**/UserData/
+settings.json
+settings.json.tmp
+*.env
+.env*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Legacy root copy (the maintained entry point is source/electron/main.cjs)
+/main.cjs

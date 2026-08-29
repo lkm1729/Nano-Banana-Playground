@@ -1,0 +1,31 @@
+{
+  "name": "nano-banana-playground",
+  "private": true,
+  "version": "0.2.0",
+  "description": "A local-first Nano-Banana image client",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "desktop:app": "npm run build && electron .",
+    "desktop:package": "npm run build && electron-packager . \"Nano-Banana Playground\" --platform=win32 --arch=x64 --out=release --overwrite --asar --prune=true --ignore=src --ignore=docs --ignore=release --ignore=node_modules/.cache",
+    "test:protocol": "node tests/protocol-smoke.cjs",
+    "test:desktop": "node tests/desktop-integration.cjs",
+    "test:clipboard": "node tests/clipboard-smoke.cjs"
+  },
+  "dependencies": {
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "^6.1.0",
+    "electron": "^44.0.0",
+    "typescript": "latest",
+    "vite": "^8.2.2"
+  }
+}
